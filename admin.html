@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin – SigaOn+ Fibra</title>
+  <link rel="icon" type="image/png" href="https://www.figma.com/api/mcp/asset/17772ea0-3365-4ed6-b0e2-a6da68f679be" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="admin.css" />
+</head>
+<body>
+
+  <!-- ── LOGIN ── -->
+  <div id="loginScreen" class="login-screen">
+    <div class="login-card">
+      <div class="login-card__logo">
+        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+          <circle cx="24" cy="24" r="24" fill="#53b300"/>
+          <path d="M12 24 Q24 10 36 24 Q24 38 12 24Z" fill="white" opacity="0.9"/>
+        </svg>
+        <span>SigaOn+ Admin</span>
+      </div>
+      <h1>Painel Administrativo</h1>
+      <p>Insira a senha para acessar o painel de controle.</p>
+      <form id="loginForm" onsubmit="doLogin(event)">
+        <input type="password" id="adminPass" placeholder="Senha de acesso" autocomplete="current-password" required />
+        <button type="submit" class="btn-primary">Entrar</button>
+        <p id="loginError" class="login-error"></p>
+      </form>
+    </div>
+  </div>
+
+  <!-- ── DASHBOARD ── -->
+  <div id="dashboard" class="dashboard" style="display:none">
+
+    <header class="dash-header">
+      <div class="dash-header__brand">
+        <svg width="32" height="32" viewBox="0 0 48 48" fill="none">
+          <circle cx="24" cy="24" r="24" fill="#53b300"/>
+          <path d="M12 24 Q24 10 36 24 Q24 38 12 24Z" fill="white" opacity="0.9"/>
+        </svg>
+        <span>SigaOn+ Admin</span>
+      </div>
+      <div class="dash-header__actions">
+        <a href="index.html" target="_blank" class="btn-ghost">Ver Site</a>
+        <button onclick="doLogout()" class="btn-ghost btn-ghost--red">Sair</button>
+      </div>
+    </header>
+
+    <div class="dash-body">
+
+      <!-- Sidebar nav -->
+      <nav class="dash-nav">
+        <button class="nav-item nav-item--active" onclick="showTab('links', this)">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+          Links Globais
+        </button>
+        <button class="nav-item" onclick="showTab('banners', this)">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+          Banners
+        </button>
+        <button class="nav-item" onclick="showTab('cidades', this)">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Cidades
+        </button>
+        <button class="nav-item" onclick="showTab('planos', this)">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+          Planos
+        </button>
+        <button class="nav-item" onclick="showTab('senha', this)">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          Senha
+        </button>
+      </nav>
+
+      <!-- Content -->
+      <main class="dash-content">
+
+        <!-- Links Tab -->
+        <section id="tab-links" class="tab-panel">
+          <div class="panel-header">
+            <h2>Links Globais</h2>
+            <p>Estes links são usados em todo o site. Ao salvar, as mudanças são aplicadas imediatamente.</p>
+          </div>
+          <div class="field-group">
+            <div class="field">
+              <label>WhatsApp Principal</label>
+              <input type="text" id="lnk_whatsapp" placeholder="https://wa.me/557336136407" />
+              <span class="field-hint">Número principal usado nos botões de planos e formulários</span>
+            </div>
+            <div class="field">
+              <label>URL – Contratos</label>
+              <input type="text" id="lnk_contratos" placeholder="https://..." />
+            </div>
+            <div class="field">
+              <label>URL – Comunicados</label>
+              <input type="text" id="lnk_comunicados" placeholder="https://..." />
+            </div>
+            <div class="field">
+              <label>URL – Central do Cliente</label>
+              <input type="text" id="lnk_central" placeholder="https://central.sigaonmais.com.br/..." />
+            </div>
+          </div>
+          <div class="panel-actions">
+            <button onclick="saveLinks()" class="btn-primary">Salvar Links</button>
+            <button onclick="resetLinks()" class="btn-secondary">Restaurar Padrões</button>
+          </div>
+        </section>
+
+        <!-- Banners Tab -->
+        <section id="tab-banners" class="tab-panel" style="display:none">
+          <div class="panel-header">
+            <h2>Banners do Site</h2>
+            <p>Configure as imagens dos slides do hero. Use URL ou envie um arquivo (máx. 3 MB). Arquivo tem prioridade sobre URL. Deixe em branco para usar o banner padrão da página.</p>
+          </div>
+
+          <div class="banner-section-label">Banner do Hero</div>
+          <p class="field-hint" style="margin-bottom:16px">Aplicado em todas as páginas (Para Você, Para Empresas, Atendimento e Sobre Nós). Apenas o Slide 1 é utilizado.</p>
+          <div class="field-group">
+
+            <!-- Slide 1 -->
+            <div class="field">
+              <label>Slide 1 — aparece em TODAS as páginas</label>
+              <div class="field-with-preview">
+                <input type="text" id="bn_slide1" placeholder="https://... (URL da imagem)" oninput="previewBannerUrl(1, this.value)" />
+                <button onclick="clearBannerUrl(1)" class="btn-icon" title="Limpar URL">✕</button>
+              </div>
+              <div class="file-upload-row">
+                <label class="upload-btn" for="bn_file1">Enviar arquivo</label>
+                <input type="file" id="bn_file1" accept="image/*" onchange="handleBannerFile(1, this)" />
+                <span id="bn_file1_info" class="file-badge"></span>
+                <button id="bn_file1_clear" onclick="clearBannerFile(1)" class="btn-icon file-clear-btn" title="Remover arquivo" style="display:none">✕ arquivo</button>
+              </div>
+              <div id="preview1" class="banner-preview"></div>
+            </div>
+
+            <!-- Slide 2 (não utilizado após unificação dos banners) -->
+            <div class="field" style="opacity:0.5">
+              <label>Slide 2 — não utilizado (banner unificado em 1 slide)</label>
+              <div class="field-with-preview">
+                <input type="text" id="bn_slide2" placeholder="https://... (URL da imagem)" oninput="previewBannerUrl(2, this.value)" />
+                <button onclick="clearBannerUrl(2)" class="btn-icon" title="Limpar URL">✕</button>
+              </div>
+              <div class="file-upload-row">
+                <label class="upload-btn" for="bn_file2">Enviar arquivo</label>
+                <input type="file" id="bn_file2" accept="image/*" onchange="handleBannerFile(2, this)" />
+                <span id="bn_file2_info" class="file-badge"></span>
+                <button id="bn_file2_clear" onclick="clearBannerFile(2)" class="btn-icon file-clear-btn" title="Remover arquivo" style="display:none">✕ arquivo</button>
+              </div>
+              <div id="preview2" class="banner-preview"></div>
+            </div>
+
+            <!-- Slide 3 (não utilizado após unificação dos banners) -->
+            <div class="field" style="opacity:0.5">
+              <label>Slide 3 — não utilizado (banner unificado em 1 slide)</label>
+              <div class="field-with-preview">
+                <input type="text" id="bn_slide3" placeholder="https://... (URL da imagem)" oninput="previewBannerUrl(3, this.value)" />
+                <button onclick="clearBannerUrl(3)" class="btn-icon" title="Limpar URL">✕</button>
+              </div>
+              <div class="file-upload-row">
+                <label class="upload-btn" for="bn_file3">Enviar arquivo</label>
+                <input type="file" id="bn_file3" accept="image/*" onchange="handleBannerFile(3, this)" />
+                <span id="bn_file3_info" class="file-badge"></span>
+                <button id="bn_file3_clear" onclick="clearBannerFile(3)" class="btn-icon file-clear-btn" title="Remover arquivo" style="display:none">✕ arquivo</button>
+              </div>
+              <div id="preview3" class="banner-preview"></div>
+            </div>
+
+          </div>
+
+          <div class="banner-section-label" style="margin-top:12px">Foto do Escritório – Sobre Nós</div>
+          <p class="field-hint" style="margin-bottom:16px">Substitui a foto da seção "Nossa História" na página Sobre Nós</p>
+          <div class="field-group">
+            <div class="field">
+              <label>Foto do Escritório</label>
+              <div class="field-with-preview">
+                <input type="text" id="bn_historia" placeholder="https://... (URL da foto)" oninput="previewBannerUrl('historia', this.value)" />
+                <button onclick="clearBannerUrl('historia')" class="btn-icon" title="Limpar URL">✕</button>
+              </div>
+              <div class="file-upload-row">
+                <label class="upload-btn" for="bn_file_historia">Enviar arquivo</label>
+                <input type="file" id="bn_file_historia" accept="image/*" onchange="handleBannerFile('historia', this)" />
+                <span id="bn_file_historia_info" class="file-badge"></span>
+                <button id="bn_file_historia_clear" onclick="clearBannerFile('historia')" class="btn-icon file-clear-btn" title="Remover arquivo" style="display:none">✕ arquivo</button>
+              </div>
+              <div id="previewhistoria" class="banner-preview"></div>
+            </div>
+          </div>
+
+          <div class="panel-actions">
+            <button onclick="saveBanners()" class="btn-primary">Salvar Banners</button>
+            <button onclick="clearAllBanners()" class="btn-secondary">Limpar Todos</button>
+          </div>
+        </section>
+
+        <!-- Cidades Tab -->
+        <section id="tab-cidades" class="tab-panel" style="display:none">
+          <div class="panel-header">
+            <h2>Configuração por Cidade</h2>
+            <p>Configure o WhatsApp e ativação de cada cidade. O WhatsApp da cidade é usado quando o usuário a seleciona na tela de localização. Para editar os planos, use a aba Planos.</p>
+          </div>
+          <div class="cidades-table-wrap">
+            <table class="cidades-table">
+              <thead>
+                <tr>
+                  <th>Cidade</th>
+                  <th>WhatsApp (URL completo)</th>
+                  <th>Ativa</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody id="cidadesBody">
+                <!-- populated by JS -->
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Adicionar cidade -->
+          <div class="add-city-row">
+            <input type="text" id="novaCidade" placeholder="Nome da nova cidade" class="add-city-input" />
+            <input type="text" id="novaCidadeWA" placeholder="https://wa.me/55..." class="add-city-input" />
+            <button onclick="addCity()" class="btn-secondary">+ Adicionar Cidade</button>
+          </div>
+
+          <div class="panel-actions" style="margin-top:20px">
+            <button onclick="saveCidades()" class="btn-primary">Salvar Cidades</button>
+            <button onclick="resetCidades()" class="btn-secondary">Restaurar Padrão</button>
+          </div>
+        </section>
+
+        <!-- Planos Tab -->
+        <section id="tab-planos" class="tab-panel" style="display:none">
+          <div class="panel-header">
+            <h2>Planos por Cidade</h2>
+            <p>Configure os planos exibidos para cada cidade. Deixe sem planos para usar os planos padrão do site.</p>
+          </div>
+          <div class="field">
+            <label>Cidade</label>
+            <select id="planos_cidade" class="admin-select" onchange="loadCityPlans(this.value)">
+              <!-- populated by JS -->
+            </select>
+          </div>
+
+          <div id="planos_editor" style="display:none; margin-top:28px">
+
+            <div class="plans-section">
+              <div class="plans-section__header">
+                <h3>Para Você</h3>
+                <button onclick="addVocePlan()" class="btn-secondary btn-sm">+ Adicionar Plano</button>
+              </div>
+              <div id="voce_plans_list"></div>
+            </div>
+
+            <div class="plans-section" style="margin-top:32px">
+              <div class="plans-section__header">
+                <h3>Internet Fibra – Empresas (com preço)</h3>
+                <button onclick="addEmpresasFibraPlan()" class="btn-secondary btn-sm">+ Adicionar Plano</button>
+              </div>
+              <div id="empresas_fibra_plans_list"></div>
+            </div>
+
+            <div class="plans-section" style="margin-top:32px">
+              <div class="plans-section__header">
+                <h3>Soluções Empresariais</h3>
+                <button onclick="addEmpresasPlan()" class="btn-secondary btn-sm">+ Adicionar Plano</button>
+              </div>
+              <div id="empresas_plans_list"></div>
+            </div>
+
+            <div class="panel-actions" style="margin-top:28px">
+              <button onclick="savePlanos()" class="btn-primary">Salvar Planos</button>
+              <button onclick="resetCityPlanos()" class="btn-secondary">Usar Padrão do Site</button>
+            </div>
+          </div>
+        </section>
+
+        <!-- Senha Tab -->
+        <section id="tab-senha" class="tab-panel" style="display:none">
+          <div class="panel-header">
+            <h2>Alterar Senha</h2>
+            <p>Defina uma nova senha de acesso para este painel.</p>
+          </div>
+          <div class="field-group">
+            <div class="field">
+              <label>Senha Atual</label>
+              <input type="password" id="passAtual" placeholder="••••••••" />
+            </div>
+            <div class="field">
+              <label>Nova Senha</label>
+              <input type="password" id="passNova" placeholder="••••••••" />
+            </div>
+            <div class="field">
+              <label>Confirmar Nova Senha</label>
+              <input type="password" id="passConfirm" placeholder="••••••••" />
+            </div>
+          </div>
+          <div class="panel-actions">
+            <button onclick="changeSenha()" class="btn-primary">Alterar Senha</button>
+          </div>
+        </section>
+
+      </main>
+    </div>
+  </div>
+
+  <div id="toast" class="toast"></div>
+
+  <script src="admin.js"></script>
+</body>
+</html>

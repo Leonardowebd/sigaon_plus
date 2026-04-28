@@ -1,0 +1,310 @@
+/* ───────────── HERO ───────────── */
+.atend-hero {
+  position: relative;
+  width: 100%;
+  height: 536px;
+  overflow: hidden;
+}
+
+.atend-hero__slide {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.atend-hero__slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.atend-hero__btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  width: 52px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.atend-hero__btn--prev { left: 24px; }
+.atend-hero__btn--next { right: 24px; }
+
+.atend-hero__btn img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* ───────────── CANAIS DE ATENDIMENTO ───────────── */
+.atend-cards {
+  position: relative;
+  width: 100%;
+  padding: 70px 80px;
+  overflow: hidden;
+}
+
+.atend-cards__bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.atend-cards__bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.atend-cards__container {
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.atend-cards__title {
+  font-size: 32px;
+  font-weight: 800;
+  color: #53b300;
+  text-align: center;
+  margin-bottom: 32px;
+  text-transform: uppercase;
+}
+
+.atend-cards__grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 14px;
+}
+
+/* ── Card outer (transparent + frame overlay) ── */
+.atend-card {
+  position: relative;
+  border-radius: 20px;
+  padding: 13px 10px;
+  box-shadow: 0 0 3.9px rgba(49, 79, 24, 0.16);
+  overflow: hidden;
+}
+
+.atend-card--fin {
+  grid-column: 1 / -1;
+}
+
+.atend-card__frame {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.atend-card__frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+/* ── Card inner (white bg) ── */
+.atend-card__inner {
+  position: relative;
+  z-index: 1;
+  background: white;
+  border-radius: 14px;
+  padding: 20px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.atend-card__header {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.atend-card__icon {
+  width: 39px;
+  height: 39px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.atend-card__header h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1a1a1a;
+  line-height: 1.3;
+}
+
+.atend-card__inner p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.atend-card__number {
+  font-size: 24px;
+  font-weight: 700;
+  color: #53b300;
+  text-align: center;
+  margin-top: 4px;
+}
+
+/* ───────────── FALE CONOSCO + AJUDA ───────────── */
+.atend-ajuda {
+  position: relative;
+  width: 100%;
+  padding: 80px 80px;
+  overflow: hidden;
+}
+
+.atend-ajuda__bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.atend-ajuda__bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.atend-ajuda__container {
+  position: relative;
+  z-index: 1;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.atend-ajuda__header {
+  text-align: center;
+}
+
+.atend-ajuda__header h2 {
+  font-size: 40px;
+  font-weight: 800;
+  color: #000;
+  line-height: 1.2;
+  margin-bottom: 12px;
+}
+
+.atend-ajuda__header h2 span {
+  color: #53b300;
+}
+
+.atend-ajuda__header p {
+  font-size: 18px;
+  font-weight: 400;
+  color: #333;
+}
+
+/* ── Form card ── */
+.atend-form-card {
+  position: relative;
+  border-radius: 20px;
+  padding: 13px 10px;
+  box-shadow: 0 0 3.9px rgba(49, 79, 24, 0.16);
+  overflow: hidden;
+  width: 100%;
+}
+
+.atend-form-card__frame {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.atend-form-card__frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+.atend-form-card__inner {
+  position: relative;
+  z-index: 1;
+  background: white;
+  border-radius: 14px;
+  padding: 36px 44px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.atend-form-card__title {
+  font-size: 28px;
+  font-weight: 800;
+  color: #53b300;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* ───────────── MOBILE ───────────── */
+@media (max-width: 768px) {
+  .atend-hero {
+    height: 220px;
+  }
+
+  .atend-hero__btn {
+    width: 36px;
+    height: 36px;
+  }
+
+  .atend-hero__btn--prev { left: 10px; }
+  .atend-hero__btn--next { right: 10px; }
+
+  .atend-cards {
+    padding: 50px 20px;
+  }
+
+  .atend-cards__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .atend-card--fin {
+    grid-column: unset;
+  }
+
+  .atend-cards__title {
+    font-size: 22px;
+  }
+
+  .atend-ajuda {
+    padding: 50px 20px;
+  }
+
+  .atend-ajuda__header h2 {
+    font-size: 26px;
+  }
+
+  .atend-ajuda__header p {
+    font-size: 15px;
+  }
+
+  .atend-form-card__inner {
+    padding: 20px 16px;
+  }
+
+  .atend-form-card__title {
+    font-size: 22px;
+  }
+}

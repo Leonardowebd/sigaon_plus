@@ -1,0 +1,284 @@
+/* ───────────── HERO ───────────── */
+.sobre-hero {
+  position: relative;
+  width: 100%;
+  height: 536px;
+  overflow: hidden;
+}
+
+.sobre-hero__slide {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.sobre-hero__slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.sobre-hero__btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  width: 52px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sobre-hero__btn--prev { left: 24px; }
+.sobre-hero__btn--next { right: 24px; }
+
+.sobre-hero__btn img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* ───────────── NOSSA HISTÓRIA ───────────── */
+.historia {
+  position: relative;
+  width: 100%;
+  padding: 80px 80px;
+  overflow: hidden;
+}
+
+.historia__bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.historia__bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.historia__container {
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 60px;
+  align-items: center;
+}
+
+.historia__text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.historia__title {
+  font-size: 28px;
+  font-weight: 800;
+  color: #53b300;
+  line-height: 1.2;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+  margin: 0;
+}
+
+.historia__text p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #333;
+  line-height: 1.75;
+}
+
+.historia__text p strong {
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.historia__photo-wrap {
+  flex: 0 0 440px;
+}
+
+/* Photo card: frame overlay + photo inside */
+.historia__photo-card {
+  position: relative;
+  border-radius: 20px;
+  padding: 13px 10px;
+  box-shadow: 0 0 3.9px rgba(49, 79, 24, 0.16);
+  overflow: hidden;
+}
+
+.historia__photo-frame {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.historia__photo-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+.historia__photo-img {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  display: block;
+  border-radius: 14px;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  background: linear-gradient(135deg, #e8f5d8 0%, #c8e6a0 100%);
+}
+
+.historia__photo-img:not([src]), .historia__photo-img[src=""] {
+  min-height: 200px;
+}
+
+/* ───────────── TRABALHE CONOSCO ───────────── */
+.trabalhe {
+  position: relative;
+  width: 100%;
+  padding: 80px 80px;
+  overflow: hidden;
+}
+
+.trabalhe__bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.trabalhe__bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.trabalhe__container {
+  position: relative;
+  z-index: 1;
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.trabalhe__header {
+  text-align: center;
+}
+
+.trabalhe__header h2 {
+  font-size: 40px;
+  font-weight: 800;
+  color: #53b300;
+  line-height: 1.2;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.trabalhe__header p {
+  font-size: 18px;
+  font-weight: 400;
+  color: #333;
+  line-height: 1.5;
+}
+
+/* Form card */
+.trabalhe__form-card {
+  position: relative;
+  border-radius: 20px;
+  padding: 13px 10px;
+  box-shadow: 0 0 3.9px rgba(49, 79, 24, 0.16);
+  overflow: hidden;
+  width: 100%;
+}
+
+.trabalhe__form-frame {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.trabalhe__form-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+.trabalhe__form-inner {
+  position: relative;
+  z-index: 1;
+  background: white;
+  border-radius: 14px;
+  padding: 36px 44px;
+  display: flex;
+  justify-content: center;
+}
+
+/* ───────────── MOBILE ───────────── */
+@media (max-width: 768px) {
+  .sobre-hero {
+    height: 220px;
+  }
+
+  .sobre-hero__btn {
+    width: 36px;
+    height: 36px;
+  }
+
+  .sobre-hero__btn--prev { left: 10px; }
+  .sobre-hero__btn--next { right: 10px; }
+
+  .historia {
+    padding: 50px 20px;
+  }
+
+  .historia__container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .historia__photo-wrap {
+    flex: unset;
+    width: 100%;
+  }
+
+  .historia__title {
+    font-size: 20px;
+  }
+
+  .historia__text p {
+    font-size: 15px;
+  }
+
+  .trabalhe {
+    padding: 50px 20px;
+  }
+
+  .trabalhe__header h2 {
+    font-size: 28px;
+  }
+
+  .trabalhe__header p {
+    font-size: 15px;
+  }
+
+  .trabalhe__form-inner {
+    padding: 20px 16px;
+  }
+}

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sobre Nós – SigaOn+ Fibra</title>
+  <meta name="description" content="Conheça a história da SigaOn+ Fibra, provedora de internet 100% fibra óptica com missão de conectar o interior da Bahia. Venha trabalhar conosco!" />
+  <link rel="icon" type="image/png" href="https://www.figma.com/api/mcp/asset/17772ea0-3365-4ed6-b0e2-a6da68f679be" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="common.css" />
+  <link rel="stylesheet" href="sobre.css" />
+</head>
+<body>
+
+  <!-- TOP BAR -->
+  <div class="topbar">
+    <div class="topbar__location">
+      <img src="https://www.figma.com/api/mcp/asset/509932fe-92f5-47fa-9c11-f2592446bd83" alt="Localização" class="topbar__pin" />
+      <span>Vitória da Conquista</span>
+    </div>
+    <a href="https://central.sigaonmais.com.br/central_assinante_web/" target="_blank" rel="noopener" class="topbar__assinante" style="text-decoration:none;">
+      <span>Central do cliente</span>
+      <img src="https://www.figma.com/api/mcp/asset/f38ab942-40d4-44d4-900e-5607df3cefc0" alt="" class="topbar__arrow" />
+    </a>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="navbar__inner">
+      <a href="index.html" class="navbar__logo">
+        <img src="https://www.figma.com/api/mcp/asset/5a227707-d782-41a7-a4f5-f734ccffd94e" alt="SigaOn+ Fibra" />
+      </a>
+      <ul class="navbar__links">
+        <li><a href="index.html">Para Você</a></li>
+        <li><a href="empresas.html">Para Empresas</a></li>
+        <li><a href="localizacao.html">Nossas Lojas</a></li>
+        <li><a href="atendimento.html">Atendimento</a></li>
+        <li><a href="sobre.html" class="navbar__link--active">Sobre Nós</a></li>
+      </ul>
+      <a href="#" class="navbar__btn">
+        <img src="https://www.figma.com/api/mcp/asset/aab3d4c4-42a5-4356-9e2c-41745ec35d3c" alt="" class="navbar__btn-bg" />
+        <span>Assinar</span>
+      </a>
+      <button class="navbar__hamburger" onclick="toggleMobileMenu()" aria-label="Menu">
+        <img src="https://www.figma.com/api/mcp/asset/f3e67ed9-f7e2-4037-a62c-b04da361e95f" alt="Menu" />
+      </button>
+    </div>
+    <div class="navbar__border"></div>
+    <div class="navbar__mobile-menu" id="mobileMenu">
+      <a href="index.html">Para Você</a>
+      <a href="empresas.html">Para Empresas</a>
+      <a href="localizacao.html">Nossas Lojas</a>
+      <a href="atendimento.html">Atendimento</a>
+      <a href="sobre.html" class="navbar__mobile-link--active">Sobre Nós</a>
+      <a href="localizacao.html" class="navbar__mobile-link--icon">
+        <img src="https://www.figma.com/api/mcp/asset/509932fe-92f5-47fa-9c11-f2592446bd83" alt="" />
+        <span>Localização</span>
+      </a>
+      <a href="#" class="navbar__mobile-link--icon">
+        <img src="https://www.figma.com/api/mcp/asset/f38ab942-40d4-44d4-900e-5607df3cefc0" alt="" />
+        <span>Central do cliente</span>
+      </a>
+      <a href="#" class="navbar__mobile-btn">Assinar</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="sobre-hero">
+    <div class="sobre-hero__slide">
+      <img src="https://www.figma.com/api/mcp/asset/717f269d-c22d-4c77-b68e-e940b7cf7363" alt="SigaOn+ Fibra" />
+    </div>
+    <button class="sobre-hero__btn sobre-hero__btn--prev" onclick="heroSlide(-1)" aria-label="Anterior">
+      <img src="https://www.figma.com/api/mcp/asset/900d066f-c737-41b1-a3d3-7985c9c7c66c" alt="Anterior" />
+    </button>
+    <button class="sobre-hero__btn sobre-hero__btn--next" onclick="heroSlide(1)" aria-label="Próximo">
+      <img src="https://www.figma.com/api/mcp/asset/fe472bf1-604f-45f9-b804-15a53411f0a4" alt="Próximo" />
+    </button>
+  </section>
+
+  <!-- FEATURES BAR -->
+  <div class="features-bar">
+    <div class="features-bar__track" aria-hidden="true">
+      <div class="features-bar__item"><img src="https://www.figma.com/api/mcp/asset/33a74bad-0640-4859-89c5-81944e020af0" alt="" /><span>Suporte premium</span></div>
+      <div class="features-bar__item"><img src="https://www.figma.com/api/mcp/asset/fd2e3527-876d-40d9-aae2-587ea9bfa2d2" alt="" /><span>Apps incríveis</span></div>
+      <div class="features-bar__item"><img src="https://www.figma.com/api/mcp/asset/fce41a13-d5ce-4e37-ac75-73999d4a0d7e" alt="" /><span>100% fibra</span></div>
+      <div class="features-bar__item"><img src="https://www.figma.com/api/mcp/asset/4951628e-cc6d-4104-88a6-258c14d3d9e4" alt="" /><span>Wi-fi grátis</span></div>
+      <div class="features-bar__item"><img src="https://www.figma.com/api/mcp/asset/15ae06cd-1014-4e44-b9dc-d30823f473ec" alt="" /><span>Instalação rápida</span></div>
+      <div class="features-bar__item"><img src="https://www.figma.com/api/mcp/asset/33a74bad-0640-4859-89c5-81944e020af0" alt="" /><span>Suporte premium</span></div>
+      <div class="features-bar__item"><img src="https://www.figma.com/api/mcp/asset/fd2e3527-876d-40d9-aae2-587ea9bfa2d2" alt="" /><span>Apps incríveis</span></div>
+      <div class="features-bar__item"><img src="https://www.figma.com/api/mcp/asset/fce41a13-d5ce-4e37-ac75-73999d4a0d7e" alt="" /><span>100% fibra</span></div>
+      <div class="features-bar__item"><img src="https://www.figma.com/api/mcp/asset/4951628e-cc6d-4104-88a6-258c14d3d9e4" alt="" /><span>Wi-fi grátis</span></div>
+      <div class="features-bar__item"><img src="https://www.figma.com/api/mcp/asset/15ae06cd-1014-4e44-b9dc-d30823f473ec" alt="" /><span>Instalação rápida</span></div>
+      <div class="features-bar__item"><img src="https://www.figma.com/api/mcp/asset/33a74bad-0640-4859-89c5-81944e020af0" alt="" /><span>Suporte premium</span></div>
+      <div class="features-bar__item"><img src="https://www.figma.com/api/mcp/asset/fd2e3527-876d-40d9-aae2-587ea9bfa2d2" alt="" /><span>Apps incríveis</span></div>
+      <div class="features-bar__item"><img src="https://www.figma.com/api/mcp/asset/fce41a13-d5ce-4e37-ac75-73999d4a0d7e" alt="" /><span>100% fibra</span></div>
+      <div class="features-bar__item"><img src="https://www.figma.com/api/mcp/asset/4951628e-cc6d-4104-88a6-258c14d3d9e4" alt="" /><span>Wi-fi grátis</span></div>
+      <div class="features-bar__item"><img src="https://www.figma.com/api/mcp/asset/15ae06cd-1014-4e44-b9dc-d30823f473ec" alt="" /><span>Instalação rápida</span></div>
+      <div class="features-bar__item"><img src="https://www.figma.com/api/mcp/asset/33a74bad-0640-4859-89c5-81944e020af0" alt="" /><span>Suporte premium</span></div>
+      <div class="features-bar__item"><img src="https://www.figma.com/api/mcp/asset/fd2e3527-876d-40d9-aae2-587ea9bfa2d2" alt="" /><span>Apps incríveis</span></div>
+      <div class="features-bar__item"><img src="https://www.figma.com/api/mcp/asset/fce41a13-d5ce-4e37-ac75-73999d4a0d7e" alt="" /><span>100% fibra</span></div>
+      <div class="features-bar__item"><img src="https://www.figma.com/api/mcp/asset/4951628e-cc6d-4104-88a6-258c14d3d9e4" alt="" /><span>Wi-fi grátis</span></div>
+      <div class="features-bar__item"><img src="https://www.figma.com/api/mcp/asset/15ae06cd-1014-4e44-b9dc-d30823f473ec" alt="" /><span>Instalação rápida</span></div>
+    </div>
+  </div>
+
+  <!-- NOSSA HISTÓRIA -->
+  <section class="historia">
+    <div class="historia__bg">
+      <img src="https://www.figma.com/api/mcp/asset/264231ee-e0de-4dd1-ac24-17fcdb9d40f5" alt="" />
+    </div>
+    <div class="historia__container">
+      <div class="historia__text">
+        <h2 class="historia__title">NOSSA HISTÓRIA: CONECTANDO VOCÊ AO FUTURO</h2>
+        <p>Na <strong>SigaOn+</strong>, conectamos pessoas e sonhos com tecnologia de ponta e atendimento humano. Com outorgas <strong>SCM e STFC da ANATEL</strong>, entregamos banda larga segura e estável para transformar sua experiência digital.</p>
+        <p>Desde 2016, evoluímos para encurtar distâncias e hoje atendemos <strong>9 municípios na Bahia</strong>: Itabuna, Ilhéus, Itajuípe, Una, Serra Grande, Itacaré, Maraú e a recém-chegada Vitória da Conquista. Em plena expansão, seguimos investindo em inovação para levar o melhor da internet à sua casa ou empresa. Acreditamos que uma conexão de qualidade transforma vidas.</p>
+      </div>
+      <div class="historia__photo-wrap">
+        <div class="historia__photo-card">
+          <div class="historia__photo-frame">
+            <img src="https://www.figma.com/api/mcp/asset/f5c339bc-2b91-4025-9638-1877e85fc64e" alt="" />
+          </div>
+          <img src="https://www.figma.com/api/mcp/asset/4a07d021-1b1b-4306-977c-dd6e610dbf58" alt="Escritório SigaOn+ Fibra" class="historia__photo-img" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRABALHE CONOSCO -->
+  <section class="trabalhe">
+    <div class="trabalhe__bg">
+      <img src="https://www.figma.com/api/mcp/asset/0aac9aa5-862c-4f41-8e1c-184bfa50d9d5" alt="" />
+    </div>
+    <div class="trabalhe__container">
+      <div class="trabalhe__header">
+        <h2>TRABALHE CONOSCO!</h2>
+        <p>Deseja trabalhar conosco? Preencha o Formulário abaixo:</p>
+      </div>
+      <div class="trabalhe__form-card">
+        <div class="trabalhe__form-frame">
+          <img src="https://www.figma.com/api/mcp/asset/dc809baf-74ef-4846-b2de-b6140abc38b9" alt="" />
+        </div>
+        <div class="trabalhe__form-inner">
+          <form class="contact-form" onsubmit="submitContactForm(event)">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="nome">Nome *</label>
+                <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required />
+              </div>
+              <div class="form-group">
+                <label for="telefone">Telefone *</label>
+                <input type="tel" id="telefone" name="telefone" data-mask="phone" placeholder="(99) 9 9999-9999" required />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">E-mail *</label>
+                <input type="email" id="email" name="email" placeholder="seu@email.com" required />
+              </div>
+              <div class="form-group">
+                <label for="cep">CEP</label>
+                <input type="text" id="cep" name="cep" data-mask="cep" placeholder="99999-999" />
+              </div>
+            </div>
+            <div class="form-group form-group--full">
+              <label for="endereco">Endereço Completo *</label>
+              <input type="text" id="endereco" name="endereco" placeholder="Rua, número, bairro, cidade, estado" required />
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="setor">Área de Interesse *</label>
+                <select id="setor" name="setor" required>
+                  <option value="">Selecione a área</option>
+                  <option value="comercial">Comercial</option>
+                  <option value="suporte">Suporte Técnico</option>
+                  <option value="financeiro">Financeiro</option>
+                  <option value="cobranca">Cobrança</option>
+                  <option value="assinatura">Assinatura / Atendimento</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group form-group--full">
+              <label for="assunto">Mensagem / Cargo desejado *</label>
+              <textarea id="assunto" name="assunto" rows="5" placeholder="Descreva sua experiência e o cargo que tem interesse..." required></textarea>
+            </div>
+            <div class="form-group form-group--checkbox">
+              <input type="checkbox" id="privacidade" name="privacidade" />
+              <label for="privacidade">Aceito as <a href="privacidade.html">Políticas de Privacidade</a></label>
+            </div>
+            <button type="submit" class="form-submit">
+              <span>Enviar candidatura</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__bg">
+      <img src="https://www.figma.com/api/mcp/asset/36e65174-91c3-495b-8942-ac4612cd5d00" alt="" />
+    </div>
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <a href="index.html" class="footer__logo">
+          <img src="https://www.figma.com/api/mcp/asset/250050c1-df57-48ce-888e-1e448f819823" alt="SigaOn+ Fibra" />
+        </a>
+        <p>MAIS CONECTIVIDADE LTDA. É provedor de serviços de comunicação multimídia autorizado pela ANATEL.</p>
+      </div>
+      <div class="footer__contacts">
+        <h4>Contatos:</h4>
+        <a href="tel:08005805580">
+          <img src="https://www.figma.com/api/mcp/asset/9309411b-d7a6-41fe-b991-4bd00ffb1c95" alt="" />
+          <span>0800 580 5580</span>
+        </a>
+        <a href="tel:7336136407">
+          <img src="https://www.figma.com/api/mcp/asset/9309411b-d7a6-41fe-b991-4bd00ffb1c95" alt="" />
+          <span>(73) 3613-6407 (Demais regiões)</span>
+        </a>
+        <a href="tel:7722020000">
+          <img src="https://www.figma.com/api/mcp/asset/9309411b-d7a6-41fe-b991-4bd00ffb1c95" alt="" />
+          <span>(77) 2202-0000 (Vitória da Conquista)</span>
+        </a>
+      </div>
+      <div class="footer__info">
+        <h4>Informativos:</h4>
+        <a href="privacidade.html">Políticas de privacidade</a>
+        <a href="sobre.html">Trabalhe Conosco</a>
+        <a href="https://storage.googleapis.com/wordpress_content/sites/52/2024/07/CONTRATO-DE-PRESTACAO-DE-SERVCO-DE-TELECOMUNICACOES-.pdf" target="_blank" rel="noopener">Contratos</a>
+        <a href="https://storage.googleapis.com/wordpress_content/sites/52/2025/11/COMUNICADO-CLIENTE-MAIS-CONECTIVIDADE.pdf" target="_blank" rel="noopener">Comunicados</a>
+        <a href="#">Nossos Endereços</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="site-config.js"></script>
+  <script src="script.js"></script>
+  <script src="common.js"></script>
+</body>
+</html>

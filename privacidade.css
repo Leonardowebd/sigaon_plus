@@ -1,0 +1,91 @@
+/* ───────────── PRIVACY PAGE ───────────── */
+.privacidade {
+  width: 100%;
+  padding: 70px 80px;
+  background: white;
+}
+
+.privacidade__container {
+  max-width: 860px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.privacidade__header {
+  border-bottom: 3px solid #53b300;
+  padding-bottom: 24px;
+}
+
+.privacidade__header h1 {
+  font-size: 40px;
+  font-weight: 800;
+  color: #000;
+  line-height: 1.2;
+  margin-bottom: 8px;
+}
+
+.privacidade__header p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #888;
+}
+
+.privacidade__content {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.priv-section h2 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #31803e;
+  margin-bottom: 12px;
+}
+
+.priv-section p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #333;
+  line-height: 1.7;
+  margin-bottom: 10px;
+}
+
+.priv-section p:last-child {
+  margin-bottom: 0;
+}
+
+.priv-section ul {
+  margin: 10px 0 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.priv-section ul li {
+  font-size: 16px;
+  font-weight: 400;
+  color: #333;
+  line-height: 1.6;
+}
+
+.priv-section strong {
+  font-weight: 600;
+  color: #222;
+}
+
+@media (max-width: 768px) {
+  .privacidade {
+    padding: 50px 20px;
+  }
+
+  .privacidade__header h1 {
+    font-size: 28px;
+  }
+
+  .priv-section h2 {
+    font-size: 19px;
+  }
+}

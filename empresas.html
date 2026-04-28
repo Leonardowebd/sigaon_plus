@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Planos para Empresas – SigaOn+ Fibra</title>
+  <meta name="description" content="Soluções de internet para PMEs: Link Dedicado, Banda Larga Empresarial, Transporte de Dados e Link Full. Fibra de alta performance para sua empresa." />
+  <meta property="og:title" content="Planos para Empresas – SigaOn+ Fibra" />
+  <meta property="og:description" content="Conexão empresarial com 100% da velocidade contratada, suporte 24×7 e SLA garantido. SigaOn+ Fibra, a escolha certa para PMEs na Bahia." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" type="image/png" href="https://www.figma.com/api/mcp/asset/17772ea0-3365-4ed6-b0e2-a6da68f679be" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="common.css" />
+  <link rel="stylesheet" href="sobre.css" />
+  <link rel="stylesheet" href="empresas.css" />
+</head>
+<body>
+
+  <!-- TOP BAR -->
+  <div class="topbar">
+    <div class="topbar__location">
+      <img src="https://www.figma.com/api/mcp/asset/509932fe-92f5-47fa-9c11-f2592446bd83" alt="Localização" class="topbar__pin" />
+      <span>Vitória da Conquista</span>
+    </div>
+    <a href="https://central.sigaonmais.com.br/central_assinante_web/" target="_blank" rel="noopener" class="topbar__assinante" style="text-decoration:none;">
+      <span>Central do cliente</span>
+      <img src="https://www.figma.com/api/mcp/asset/f38ab942-40d4-44d4-900e-5607df3cefc0" alt="" class="topbar__arrow" />
+    </a>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="navbar__inner">
+      <a href="index.html" class="navbar__logo">
+        <img src="https://www.figma.com/api/mcp/asset/5a227707-d782-41a7-a4f5-f734ccffd94e" alt="SigaOn+ Fibra" />
+      </a>
+      <ul class="navbar__links">
+        <li><a href="index.html">Para Você</a></li>
+        <li><a href="empresas.html" class="navbar__link--active">Para Empresas</a></li>
+        <li><a href="localizacao.html">Nossas Lojas</a></li>
+        <li><a href="atendimento.html">Atendimento</a></li>
+        <li><a href="sobre.html">Sobre Nós</a></li>
+      </ul>
+      <a href="#" class="navbar__btn">
+        <img src="https://www.figma.com/api/mcp/asset/aab3d4c4-42a5-4356-9e2c-41745ec35d3c" alt="" class="navbar__btn-bg" />
+        <span>Assinar</span>
+      </a>
+      <button class="navbar__hamburger" onclick="toggleMobileMenu()" aria-label="Menu">
+        <img src="https://www.figma.com/api/mcp/asset/f3e67ed9-f7e2-4037-a62c-b04da361e95f" alt="Menu" />
+      </button>
+    </div>
+    <div class="navbar__border"></div>
+    <div class="navbar__mobile-menu" id="mobileMenu">
+      <a href="index.html">Para Você</a>
+      <a href="empresas.html" class="navbar__mobile-link--active">Para Empresas</a>
+      <a href="localizacao.html">Nossas Lojas</a>
+      <a href="atendimento.html">Atendimento</a>
+      <a href="sobre.html">Sobre Nós</a>
+      <a href="#" class="navbar__mobile-link--icon">
+        <img src="https://www.figma.com/api/mcp/asset/509932fe-92f5-47fa-9c11-f2592446bd83" alt="" />
+        <span>Localização</span>
+      </a>
+      <a href="#" class="navbar__mobile-link--icon">
+        <img src="https://www.figma.com/api/mcp/asset/f38ab942-40d4-44d4-900e-5607df3cefc0" alt="" />
+        <span>Central do cliente</span>
+      </a>
+      <a href="#" class="navbar__mobile-btn">Assinar</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="sobre-hero">
+    <div class="sobre-hero__slide">
+      <img src="https://www.figma.com/api/mcp/asset/f49f52e2-a2b7-41c0-ae87-2468989c69f5" alt="Conexão 100% Fibra" />
+    </div>
+    <button class="sobre-hero__btn sobre-hero__btn--prev" onclick="heroSlide(-1)" aria-label="Anterior">
+      <img src="https://www.figma.com/api/mcp/asset/992ab185-2f8a-49fe-9040-9a9693c3f9cb" alt="Anterior" />
+    </button>
+    <button class="sobre-hero__btn sobre-hero__btn--next" onclick="heroSlide(1)" aria-label="Próximo">
+      <img src="https://www.figma.com/api/mcp/asset/81954611-d9fc-4c4b-99b8-927bc14f6ce5" alt="Próximo" />
+    </button>
+  </section>
+
+  <!-- FEATURES BAR -->
+  <div class="features-bar">
+    <div class="features-bar__track" aria-hidden="true">
+      <div class="features-bar__item"><img src="https://www.figma.com/api/mcp/asset/33a74bad-0640-4859-89c5-81944e020af0" alt="" /><span>Suporte premium</span></div>
+      <div class="features-bar__item"><img src="https://www.figma.com/api/mcp/asset/fd2e3527-876d-40d9-aae2-587ea9bfa2d2" alt="" /><span>Apps incríveis</span></div>
+      <div class="features-bar__item"><img src="https://www.figma.com/api/mcp/asset/fce41a13-d5ce-4e37-ac75-73999d4a0d7e" alt="" /><span>100% fibra</span></div>
+      <div class="features-bar__item"><img src="https://www.figma.com/api/mcp/asset/4951628e-cc6d-4104-88a6-258c14d3d9e4" alt="" /><span>Wi-fi grátis</span></div>
+      <div class="features-bar__item"><img src="https://www.figma.com/api/mcp/asset/15ae06cd-1014-4e44-b9dc-d30823f473ec" alt="" /><span>Instalação rápida</span></div>
+      <div class="features-bar__item"><img src="https://www.figma.com/api/mcp/asset/33a74bad-0640-4859-89c5-81944e020af0" alt="" /><span>Suporte premium</span></div>
+      <div class="features-bar__item"><img src="https://www.figma.com/api/mcp/asset/fd2e3527-876d-40d9-aae2-587ea9bfa2d2" alt="" /><span>Apps incríveis</span></div>
+      <div class="features-bar__item"><img src="https://www.figma.com/api/mcp/asset/fce41a13-d5ce-4e37-ac75-73999d4a0d7e" alt="" /><span>100% fibra</span></div>
+      <div class="features-bar__item"><img src="https://www.figma.com/api/mcp/asset/4951628e-cc6d-4104-88a6-258c14d3d9e4" alt="" /><span>Wi-fi grátis</span></div>
+      <div class="features-bar__item"><img src="https://www.figma.com/api/mcp/asset/15ae06cd-1014-4e44-b9dc-d30823f473ec" alt="" /><span>Instalação rápida</span></div>
+      <div class="features-bar__item"><img src="https://www.figma.com/api/mcp/asset/33a74bad-0640-4859-89c5-81944e020af0" alt="" /><span>Suporte premium</span></div>
+      <div class="features-bar__item"><img src="https://www.figma.com/api/mcp/asset/fd2e3527-876d-40d9-aae2-587ea9bfa2d2" alt="" /><span>Apps incríveis</span></div>
+      <div class="features-bar__item"><img src="https://www.figma.com/api/mcp/asset/fce41a13-d5ce-4e37-ac75-73999d4a0d7e" alt="" /><span>100% fibra</span></div>
+      <div class="features-bar__item"><img src="https://www.figma.com/api/mcp/asset/4951628e-cc6d-4104-88a6-258c14d3d9e4" alt="" /><span>Wi-fi grátis</span></div>
+      <div class="features-bar__item"><img src="https://www.figma.com/api/mcp/asset/15ae06cd-1014-4e44-b9dc-d30823f473ec" alt="" /><span>Instalação rápida</span></div>
+      <div class="features-bar__item"><img src="https://www.figma.com/api/mcp/asset/33a74bad-0640-4859-89c5-81944e020af0" alt="" /><span>Suporte premium</span></div>
+      <div class="features-bar__item"><img src="https://www.figma.com/api/mcp/asset/fd2e3527-876d-40d9-aae2-587ea9bfa2d2" alt="" /><span>Apps incríveis</span></div>
+      <div class="features-bar__item"><img src="https://www.figma.com/api/mcp/asset/fce41a13-d5ce-4e37-ac75-73999d4a0d7e" alt="" /><span>100% fibra</span></div>
+      <div class="features-bar__item"><img src="https://www.figma.com/api/mcp/asset/4951628e-cc6d-4104-88a6-258c14d3d9e4" alt="" /><span>Wi-fi grátis</span></div>
+      <div class="features-bar__item"><img src="https://www.figma.com/api/mcp/asset/15ae06cd-1014-4e44-b9dc-d30823f473ec" alt="" /><span>Instalação rápida</span></div>
+    </div>
+  </div>
+
+  <!-- PLANOS EMPRESAS -->
+  <section class="eplans">
+    <div class="eplans__bg">
+      <img src="https://www.figma.com/api/mcp/asset/fd960249-9060-4808-8043-7b2a83e62c24" alt="" />
+    </div>
+    <div class="eplans__container">
+      <div class="eplans__header">
+        <h2>PLANOS DIPONÍVEIS<br />PARA EMPRESAS</h2>
+        <p>Conexão de Alta Performance para PMES:<br />Soluções completas e confiáveis!</p>
+      </div>
+      <!-- Planos Internet Fibra com preço -->
+      <div class="epc-section">
+        <div class="epc-list" id="epricePlansTrack">
+        </div>
+      </div>
+
+      <div class="eplans__carousel-wrapper">
+        <div class="eplans__list" id="eplansTrack">
+        </div>
+        <button class="eplans__nav eplans__nav--prev" onclick="eplansSlide(-1)" aria-label="Anterior">
+          <img src="https://www.figma.com/api/mcp/asset/94ed3bdf-6759-4456-a6aa-f2ea61bcb97d" alt="Anterior" />
+        </button>
+        <button class="eplans__nav eplans__nav--next" onclick="eplansSlide(1)" aria-label="Próximo">
+          <img src="https://www.figma.com/api/mcp/asset/bccb7afc-8ddd-41fd-848f-54b20b9aafb2" alt="Próximo" />
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- VANTAGENS -->
+  <section class="vantagens">
+    <div class="vantagens__bg">
+      <img src="https://www.figma.com/api/mcp/asset/c1614288-5144-41a0-8b41-a5eb1e414bc3" alt="" />
+    </div>
+    <div class="vantagens__container">
+      <div class="vantagens__header">
+        <p class="vantagens__subtitle">Mais que internet</p>
+        <h2>Vantagens Sigaon+</h2>
+      </div>
+      <div class="vantagens__cards">
+
+        <div class="vantagem-card">
+          <img src="https://www.figma.com/api/mcp/asset/17ed50c0-887d-4f0b-a70d-7ff6f5cb52da" alt="" class="vantagem-card__icon vantagem-card__icon--desktop" />
+          <img src="https://www.figma.com/api/mcp/asset/1c72cfca-0c02-499e-861b-b6b9f438e6a7" alt="" class="vantagem-card__icon vantagem-card__icon--mobile" />
+          <h3>100% da Velocidade Contratada</h3>
+          <p>Garantia total da velocidade, sem oscilações, para manter suas operações sempre no ritmo ideal.</p>
+        </div>
+
+        <div class="vantagem-card">
+          <img src="https://www.figma.com/api/mcp/asset/1920a20c-b1b5-4a60-bc49-29f54177c48d" alt="" class="vantagem-card__icon vantagem-card__icon--desktop" />
+          <img src="https://www.figma.com/api/mcp/asset/238ebe59-ecfc-4458-85d1-709c1d091325" alt="" class="vantagem-card__icon vantagem-card__icon--mobile" />
+          <h3>Suporte Técnico 24×7 com Monitoramento</h3>
+          <p>Equipe especializada à sua disposição 24 horas por dia, todos os dias, com monitoramento proativo para evitar problemas.</p>
+        </div>
+
+        <div class="vantagem-card">
+          <img src="https://www.figma.com/api/mcp/asset/6a5503f5-c770-4fdd-a64f-31a8bf854359" alt="" class="vantagem-card__icon vantagem-card__icon--desktop" />
+          <img src="https://www.figma.com/api/mcp/asset/eab20490-4064-46cf-bea9-6b47884c4e98" alt="" class="vantagem-card__icon vantagem-card__icon--mobile" />
+          <h3>Rede de Fibra Óptica</h3>
+          <p>Conexão estável e ultrarrápida, com tecnologia de ponta, para garantir o melhor desempenho nas suas atividades.</p>
+        </div>
+
+        <div class="vantagem-card">
+          <img src="https://www.figma.com/api/mcp/asset/632beadb-77e2-4a4c-bfba-cc2b36a6c6ef" alt="" class="vantagem-card__icon vantagem-card__icon--desktop" />
+          <img src="https://www.figma.com/api/mcp/asset/05aa93ed-0df8-4093-86bf-45de0675d7b7" alt="" class="vantagem-card__icon vantagem-card__icon--mobile" />
+          <h3>SigaOn+ Kaspersky (Antivírus)</h3>
+          <p>Proteja seus dados e operações com uma licença de antivírus premium, garantindo segurança para sua rede e dispositivos.</p>
+        </div>
+
+        <div class="vantagem-card">
+          <img src="https://www.figma.com/api/mcp/asset/be0eea30-8d5a-4e99-b21d-210aefb96d95" alt="" class="vantagem-card__icon vantagem-card__icon--desktop" />
+          <img src="https://www.figma.com/api/mcp/asset/bfcdd407-ed7d-4c11-b49f-093193f657f4" alt="" class="vantagem-card__icon vantagem-card__icon--mobile" />
+          <h3>Velocidades Simétricas</h3>
+          <p>Mesma velocidade de envio e recebimento de dados, perfeita para videoconferências, backups e compartilhamento.</p>
+        </div>
+
+      </div>
+      <a href="#" onclick="openWA(event,'Plano Empresarial')" class="vantagens__cta">
+        <img src="https://www.figma.com/api/mcp/asset/d041874e-c589-4c6b-b420-8e6f09b59ec7" alt="" class="vantagens__cta-bg" />
+        <span>Contratar via Whatsapp!</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- HELP SECTION -->
+  <section class="help">
+    <div class="help__bg">
+      <img src="https://www.figma.com/api/mcp/asset/af02e5af-b565-41fb-b92b-df26f1cd2513" alt="" />
+    </div>
+    <div class="help__container">
+      <div class="help__header">
+        <h2>Precisa de Ajuda?<br /><span>ESTAMOS AQUI!</span></h2>
+        <p>Selecione a opção que te ajuda melhor, resolveremos o que precisar!</p>
+      </div>
+      <div class="help__carousel-wrapper">
+        <div class="help__list" id="helpTrack">
+          <div class="help__card">
+            <div class="help__card-image">
+              <img src="https://www.figma.com/api/mcp/asset/10167bf9-4c2d-4074-babc-28d640abcdf8" alt="Testar minha velocidade" />
+            </div>
+            <div class="help__card-label">Testar minha velocidade</div>
+            <div class="help__card-border"></div>
+          </div>
+          <div class="help__card">
+            <div class="help__card-image help__card-image--zoom help__card-image--fade">
+              <img src="https://www.figma.com/api/mcp/asset/64c24211-a378-4aee-9686-801cc7fac21c" alt="Atendimento via Chat" />
+            </div>
+            <div class="help__card-label">Atendimento via Chat</div>
+            <div class="help__card-border"></div>
+          </div>
+          <div class="help__card">
+            <div class="help__card-image help__card-image--fade">
+              <img src="https://www.figma.com/api/mcp/asset/98f6d980-61aa-4db5-a4ef-1b5f36e7dd3a" alt="Suporte técnico" />
+            </div>
+            <div class="help__card-label">Suporte técnico</div>
+            <div class="help__card-border"></div>
+          </div>
+          <div class="help__card">
+            <div class="help__card-image">
+              <img src="https://www.figma.com/api/mcp/asset/f77b9935-104e-4338-814d-7df7f98f322c" alt="2ª via de conta" />
+            </div>
+            <div class="help__card-label">2ª via de conta</div>
+            <div class="help__card-border"></div>
+          </div>
+          <div class="help__card">
+            <div class="help__card-image">
+              <img src="https://www.figma.com/api/mcp/asset/db14d08b-f342-4f0d-822c-c580bacf5493" alt="Alterar meu plano" />
+            </div>
+            <div class="help__card-label">Alterar meu plano</div>
+            <div class="help__card-border"></div>
+          </div>
+          <div class="help__card">
+            <div class="help__card-image help__card-image--zoom help__card-image--fade">
+              <img src="https://www.figma.com/api/mcp/asset/924bff72-98f7-4e24-ac05-4fe0e16273c8" alt="Atendimento via WhatsApp" />
+            </div>
+            <div class="help__card-label">Atendimento via WhatsApp</div>
+            <div class="help__card-border"></div>
+          </div>
+        </div>
+        <button class="help__nav help__nav--prev" onclick="helpSlide(-1)" aria-label="Anterior">
+          <img src="https://www.figma.com/api/mcp/asset/f6918104-434f-46a1-8c5d-b3749fafa803" alt="Anterior" />
+        </button>
+        <button class="help__nav help__nav--next" onclick="helpSlide(1)" aria-label="Próximo">
+          <img src="https://www.figma.com/api/mcp/asset/54b76ff9-cfb6-483e-8e28-566825cfaf01" alt="Próximo" />
+        </button>
+        <div class="help__dots">
+          <span class="help__dot help__dot--active"></span>
+          <span class="help__dot"></span>
+          <span class="help__dot help__dot--mobile"></span>
+          <span class="help__dot help__dot--mobile"></span>
+          <span class="help__dot help__dot--mobile"></span>
+          <span class="help__dot help__dot--mobile"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer efooter">
+    <div class="footer__bg">
+      <img src="https://www.figma.com/api/mcp/asset/a2d4e26b-3fab-4f78-bad7-df8f4a8f3313" alt="" class="footer__bg--desktop" />
+      <img src="https://www.figma.com/api/mcp/asset/88674591-d86d-4d9d-9a06-34b04fadf789" alt="" class="footer__bg--mobile" />
+    </div>
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <a href="#" class="footer__logo">
+          <img src="https://www.figma.com/api/mcp/asset/2c141e5b-dc95-4968-89cc-bba2d97002d6" alt="SigaOn+ Fibra" class="footer__logo--desktop" />
+          <img src="https://www.figma.com/api/mcp/asset/489d1c4f-86d5-4168-87fe-14c0d75bda77" alt="SigaOn+ Fibra" class="footer__logo--mobile" />
+        </a>
+        <p>MAIS CONECTIVIDADE LTDA. É provedor de serviços de comunicação multimídia autorizado pela ANATEL.</p>
+      </div>
+      <div class="footer__contacts">
+        <h4>Contatos:</h4>
+        <a href="tel:08005805580">
+          <img src="https://www.figma.com/api/mcp/asset/bc14f68b-e9bc-449d-b302-c2e52f029d6d" alt="" class="footer__phone-icon footer__phone-icon--desktop" />
+          <img src="https://www.figma.com/api/mcp/asset/09caa576-6f18-4061-b8ce-65d775cd5b46" alt="" class="footer__phone-icon footer__phone-icon--mobile" />
+          <span>0800 580 5580</span>
+        </a>
+        <a href="tel:7336136407">
+          <img src="https://www.figma.com/api/mcp/asset/bc14f68b-e9bc-449d-b302-c2e52f029d6d" alt="" class="footer__phone-icon footer__phone-icon--desktop" />
+          <img src="https://www.figma.com/api/mcp/asset/09caa576-6f18-4061-b8ce-65d775cd5b46" alt="" class="footer__phone-icon footer__phone-icon--mobile" />
+          <span>(73) 3613-6407 (Demais regiões)</span>
+        </a>
+        <a href="tel:7722020000">
+          <img src="https://www.figma.com/api/mcp/asset/bc14f68b-e9bc-449d-b302-c2e52f029d6d" alt="" class="footer__phone-icon footer__phone-icon--desktop" />
+          <img src="https://www.figma.com/api/mcp/asset/09caa576-6f18-4061-b8ce-65d775cd5b46" alt="" class="footer__phone-icon footer__phone-icon--mobile" />
+          <span>(77) 2202-0000 (Vitória da Conquista)</span>
+        </a>
+      </div>
+      <div class="footer__info">
+        <h4>Informativos:</h4>
+        <a href="privacidade.html">Políticas de privacidade</a>
+        <a href="sobre.html">Trabalhe Conosco</a>
+        <a href="https://storage.googleapis.com/wordpress_content/sites/52/2024/07/CONTRATO-DE-PRESTACAO-DE-SERVCO-DE-TELECOMUNICACOES-.pdf" target="_blank" rel="noopener">Contratos</a>
+        <a href="https://storage.googleapis.com/wordpress_content/sites/52/2025/11/COMUNICADO-CLIENTE-MAIS-CONECTIVIDADE.pdf" target="_blank" rel="noopener">Comunicados</a>
+        <a href="#">Nossos Endereços</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="site-config.js"></script>
+  <script src="script.js"></script>
+  <script src="empresas.js"></script>
+  <script src="common.js"></script>
+</body>
+</html>

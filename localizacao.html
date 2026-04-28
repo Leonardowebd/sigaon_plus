@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Selecione sua Cidade – SigaOn+ Fibra</title>
+  <meta name="description" content="Selecione sua cidade e veja os planos SigaOn+ Fibra disponíveis para você." />
+  <link rel="icon" type="image/png" href="https://www.figma.com/api/mcp/asset/17772ea0-3365-4ed6-b0e2-a6da68f679be" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="common.css" />
+  <link rel="stylesheet" href="localizacao.css" />
+</head>
+<body>
+
+  <!-- CITY SELECTOR -->
+  <section class="cityselect">
+    <div class="cityselect__bg">
+      <img src="https://www.figma.com/api/mcp/asset/71543698-0520-454b-879c-aaef09b62d0c" alt="" />
+    </div>
+    <div class="cityselect__card">
+      <img src="https://www.figma.com/api/mcp/asset/c80b3b97-56d4-4401-91f2-7629a9871174" alt="SigaOn+ Fibra" class="cityselect__logo" />
+      <h1 class="cityselect__title">Seja Bem-Vindo(A)</h1>
+      <p class="cityselect__subtitle">Selecione a sua Cidade abaixo:</p>
+      <div class="cityselect__grid">
+
+        <button class="city-btn" onclick="selectCity('Camamu')">
+          <img src="https://www.figma.com/api/mcp/asset/054c883f-0967-4830-8cc0-baac85cbbca6" alt="Camamu" class="city-btn__photo" />
+          <span class="city-btn__name">Camamu</span>
+        </button>
+
+        <button class="city-btn" onclick="selectCity('Ilhéus')">
+          <img src="https://www.figma.com/api/mcp/asset/b84573d9-1323-49bb-a8eb-039ca509680d" alt="Ilhéus" class="city-btn__photo" />
+          <span class="city-btn__name">Ilhéus</span>
+        </button>
+
+        <button class="city-btn" onclick="selectCity('Itabuna')">
+          <img src="https://www.figma.com/api/mcp/asset/ec2741d1-9077-4525-8f23-18749ed9cb4f" alt="Itabuna" class="city-btn__photo" />
+          <span class="city-btn__name">Itabuna</span>
+        </button>
+
+        <button class="city-btn" onclick="selectCity('Maraú')">
+          <img src="https://www.figma.com/api/mcp/asset/de710c47-1a2f-4fc9-b007-8c9f17bd0e37" alt="Maraú" class="city-btn__photo" />
+          <span class="city-btn__name">Maraú</span>
+        </button>
+
+        <button class="city-btn" onclick="selectCity('Una')">
+          <img src="https://www.figma.com/api/mcp/asset/ad0797ea-ef24-478e-8a38-c29b7dece294" alt="Una" class="city-btn__photo" />
+          <span class="city-btn__name">Una</span>
+        </button>
+
+        <button class="city-btn" onclick="selectCity('Uruçuca')">
+          <img src="https://www.figma.com/api/mcp/asset/06dcce14-5a92-4861-87d3-9517b76a6ffd" alt="Uruçuca" class="city-btn__photo" />
+          <span class="city-btn__name">Uruçuca</span>
+        </button>
+
+        <button class="city-btn" onclick="selectCity('Vitória da Conquista')">
+          <img src="https://www.figma.com/api/mcp/asset/d7095184-3c43-4884-ab18-a09e74313a40" alt="Vitória da Conquista" class="city-btn__photo" />
+          <span class="city-btn__name">Vitória da Conquista</span>
+        </button>
+
+        <button class="city-btn" onclick="selectCity('Itacaré')">
+          <img src="https://www.figma.com/api/mcp/asset/ea76e5fe-640a-47c8-96df-eae361f325a2" alt="Itacaré" class="city-btn__photo" />
+          <span class="city-btn__name">Itacaré</span>
+        </button>
+
+        <button class="city-btn" onclick="selectCity('Itajuipe')">
+          <img src="https://www.figma.com/api/mcp/asset/aa95677d-054a-4ce9-9b4d-92f104619ee4" alt="Itajuipe" class="city-btn__photo" />
+          <span class="city-btn__name">Itajuipe</span>
+        </button>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__bg">
+      <img src="https://www.figma.com/api/mcp/asset/5c090331-0918-4a67-b19d-5438ef44925f" alt="" />
+    </div>
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <a href="index.html" class="footer__logo">
+          <img src="https://www.figma.com/api/mcp/asset/12b59917-00f4-49b7-a5fa-fa2340c6569e" alt="SigaOn+ Fibra" />
+        </a>
+        <p>MAIS CONECTIVIDADE LTDA. É provedor de serviços de comunicação multimídia autorizado pela ANATEL.</p>
+      </div>
+      <div class="footer__contacts">
+        <h4>Contatos:</h4>
+        <a href="tel:08005805580">
+          <img src="https://www.figma.com/api/mcp/asset/6656e071-8dd7-418b-bc7f-f59968eed89c" alt="" />
+          <span>0800 580 5580</span>
+        </a>
+        <a href="tel:7336136407">
+          <img src="https://www.figma.com/api/mcp/asset/6656e071-8dd7-418b-bc7f-f59968eed89c" alt="" />
+          <span>(73) 3613-6407 (Demais regiões)</span>
+        </a>
+        <a href="tel:7722020000">
+          <img src="https://www.figma.com/api/mcp/asset/6656e071-8dd7-418b-bc7f-f59968eed89c" alt="" />
+          <span>(77) 2202-0000 (Vitória da Conquista)</span>
+        </a>
+      </div>
+      <div class="footer__info">
+        <h4>Informativos:</h4>
+        <a href="privacidade.html">Políticas de privacidade</a>
+        <a href="sobre.html">Trabalhe Conosco</a>
+        <a href="https://storage.googleapis.com/wordpress_content/sites/52/2024/07/CONTRATO-DE-PRESTACAO-DE-SERVCO-DE-TELECOMUNICACOES-.pdf" target="_blank" rel="noopener">Contratos</a>
+        <a href="https://storage.googleapis.com/wordpress_content/sites/52/2025/11/COMUNICADO-CLIENTE-MAIS-CONECTIVIDADE.pdf" target="_blank" rel="noopener">Comunicados</a>
+        <a href="#">Nossos Endereços</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="site-config.js"></script>
+  <script src="script.js"></script>
+  <script src="common.js"></script>
+</body>
+</html>

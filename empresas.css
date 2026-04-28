@@ -1,0 +1,777 @@
+/* ───────────── NAVBAR ACTIVE LINK ───────────── */
+.navbar__link--active {
+  color: #53b300;
+  font-weight: 600;
+}
+
+.navbar__mobile-link--active {
+  color: #53b300;
+  font-weight: 600;
+}
+
+/* ───────────── MOBILE MENU ICON LINKS ───────────── */
+.navbar__mobile-link--icon {
+  display: none;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #222;
+  text-decoration: none;
+  padding: 8px 0;
+}
+
+.navbar__mobile-link--icon img {
+  width: 20px;
+  height: 20px;
+  filter: brightness(0);
+}
+
+/* ───────────── HERO DUAL IMAGE ───────────── */
+.hero__bg-overlay {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.hero__bg-overlay img {
+  position: absolute;
+  width: 100%;
+  height: 193.24%;
+  top: -93.24%;
+  left: 0;
+  object-fit: cover;
+}
+
+.hero__img--mobile {
+  display: none;
+}
+
+/* ───────────── PLANOS EMPRESAS ───────────── */
+.eplans {
+  position: relative;
+  width: 100%;
+  padding: 140px 80px 80px;
+  overflow: hidden;
+}
+
+.eplans__bg {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.eplans__bg img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+.eplans__container {
+  position: relative;
+  z-index: 1;
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.eplans__header {
+  text-align: center;
+}
+
+.eplans__header h2 {
+  font-size: 48px;
+  font-weight: 800;
+  color: #000;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+
+.eplans__header p {
+  font-size: 24px;
+  font-weight: 400;
+  color: #000;
+  line-height: 1.2;
+}
+
+.eplans__carousel-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 1271px;
+  overflow: hidden;
+}
+
+.eplans__list {
+  display: flex;
+  gap: 10px;
+  align-items: stretch;
+  padding: 10px;
+  transition: transform 0.4s ease;
+}
+
+/* ── Empresa Plan Card ── */
+.eplan-card {
+  flex-shrink: 0;
+  width: 306px;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 0 3.9px 0 rgba(49, 79, 24, 0.16);
+  display: flex;
+  flex-direction: column;
+  min-height: 520px;
+}
+
+.eplan-card__bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.eplan-card__bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.eplan-card__badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: white;
+  border-radius: 0 0 0 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #31803e;
+  z-index: 2;
+}
+
+.eplan-card__header {
+  position: relative;
+  z-index: 1;
+  padding: 60px 10px 16px;
+  text-align: center;
+}
+
+.eplan-card__header h3 {
+  font-size: 24px;
+  font-weight: 800;
+  color: white;
+  line-height: 1.2;
+}
+
+.eplan-card__body {
+  position: relative;
+  z-index: 1;
+  background: white;
+  border-radius: 20px;
+  padding: 18px 20px;
+  margin: 0 0 0 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.eplan-card__features {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.eplan-card__feature {
+  display: flex;
+  align-items: flex-start;
+  gap: 5px;
+}
+
+.eplan-card__feature img {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.eplan-card__feature span {
+  font-size: 16px;
+  font-weight: 400;
+  color: #000;
+  line-height: 1.2;
+}
+
+.eplan-card__actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-top: auto;
+}
+
+.eplan-card__btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 15px 35px;
+  border-radius: 10px;
+  text-decoration: none;
+  overflow: hidden;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.25), inset -4px 4px 10px rgba(255, 255, 255, 0.72), inset 1px 1px 8.1px #489c00;
+}
+
+.eplan-card__btn-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.eplan-card__btn span {
+  position: relative;
+  z-index: 1;
+  font-size: 18px;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.eplan-card__all-benefits {
+  font-size: 12px;
+  font-weight: 400;
+  color: #696969;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+/* ── Nav Arrows ── */
+.eplans__nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  background: rgba(0, 0, 0, 0.2);
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  z-index: 10;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.eplans__nav img {
+  width: 40px;
+  height: 40px;
+}
+
+.eplans__nav--prev {
+  left: 20px;
+}
+
+.eplans__nav--next {
+  right: 20px;
+}
+
+/* ───────────── VANTAGENS ───────────── */
+.vantagens {
+  position: relative;
+  width: 100%;
+  padding: 50px 80px;
+  overflow: hidden;
+}
+
+.vantagens__bg {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.vantagens__bg img {
+  position: absolute;
+  width: 100%;
+  height: 211.57%;
+  top: -55.78%;
+  left: 0;
+  object-fit: cover;
+}
+
+.vantagens__container {
+  position: relative;
+  z-index: 1;
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.vantagens__header {
+  text-align: center;
+}
+
+.vantagens__subtitle {
+  font-size: 24px;
+  font-weight: 400;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.vantagens__header h2 {
+  font-size: 48px;
+  font-weight: 700;
+  color: white;
+  line-height: 1.2;
+}
+
+.vantagens__cards {
+  display: flex;
+  gap: 20px;
+  align-items: stretch;
+  justify-content: center;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.vantagem-card {
+  background: white;
+  border-radius: 20px;
+  padding: 29px 20px;
+  width: 357px;
+  flex-shrink: 0;
+  height: 288px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 13.8px;
+  overflow: hidden;
+}
+
+.vantagem-card__icon {
+  width: 67px;
+  height: 67px;
+  flex-shrink: 0;
+}
+
+.vantagem-card__icon--mobile {
+  display: none;
+}
+
+.vantagem-card h3 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #000;
+  line-height: 1.2;
+}
+
+.vantagem-card p {
+  font-size: 19px;
+  font-weight: 400;
+  color: #000;
+  line-height: 1.2;
+}
+
+.vantagens__cta {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 35px;
+  border-radius: 10px;
+  text-decoration: none;
+  overflow: hidden;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.25), inset -4px 4px 10px rgba(255, 255, 255, 0.72), inset 1px 1px 8.1px #489c00;
+}
+
+.vantagens__cta-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.vantagens__cta span {
+  position: relative;
+  z-index: 1;
+  font-size: 18px;
+  font-weight: 700;
+  color: white;
+  white-space: nowrap;
+}
+
+/* ───────────── FOOTER DUAL ASSETS ───────────── */
+.footer__bg--mobile,
+.footer__logo--mobile,
+.footer__phone-icon--mobile {
+  display: none;
+}
+
+/* ───────────── MOBILE ───────────── */
+@media (max-width: 768px) {
+
+  /* Mobile menu icon links */
+  .navbar__mobile-link--icon {
+    display: flex;
+  }
+
+  /* Hero */
+  .hero__img--desktop {
+    display: none;
+  }
+
+  .hero__img--mobile {
+    display: block;
+  }
+
+  /* Plans */
+  .eplans {
+    padding: 50px 20px;
+  }
+
+  .eplans__header h2 {
+    font-size: 32px;
+  }
+
+  .eplans__header p {
+    font-size: 24px;
+  }
+
+  .eplans__nav--next {
+    opacity: 1;
+  }
+
+  /* Vantagens */
+  .vantagens {
+    padding: 50px 20px;
+  }
+
+  .vantagens__header h2 {
+    font-size: 32px;
+  }
+
+  .vantagens__cards {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 20px;
+  }
+
+  .vantagem-card {
+    width: 100%;
+    height: auto;
+    min-height: 288px;
+    justify-content: flex-start;
+  }
+
+  .vantagem-card__icon--desktop {
+    display: none;
+  }
+
+  .vantagem-card__icon--mobile {
+    display: block;
+  }
+
+  /* Footer */
+  .footer__bg--desktop,
+  .footer__logo--desktop,
+  .footer__phone-icon--desktop {
+    display: none;
+  }
+
+  .footer__bg--mobile,
+  .footer__logo--mobile,
+  .footer__phone-icon--mobile {
+    display: block;
+  }
+}
+
+/* ───────────── PLANOS INTERNET FIBRA EMPRESAS (COM PREÇO) ───────────── */
+.epc-section {
+  margin-bottom: 48px;
+}
+
+.epc-list {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Card base — light */
+.epc-card {
+  position: relative;
+  background: rgba(198,249,153,0.5);
+  border-radius: 20px;
+  border: 1px solid #86c252;
+  box-shadow: 0 4px 3.9px rgba(0,0,0,0.15);
+  width: 360px;
+  padding: 10px;
+  display: flex;
+  align-items: stretch;
+  flex-shrink: 0;
+}
+
+.epc-card__border {
+  position: absolute;
+  inset: 0;
+  border-radius: 20px;
+  border: 1px solid #86c252;
+  pointer-events: none;
+}
+
+.epc-card__inner {
+  background: white;
+  border-radius: 14px;
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 16px;
+  box-shadow: 0 0 3.9px rgba(49,79,24,0.16);
+}
+
+.epc-card__info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.epc-card__type {
+  font-size: 16px;
+  font-weight: 400;
+  color: #000;
+}
+
+.epc-card__type--white { color: #fff; }
+
+.epc-card__speed {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  line-height: 1;
+}
+
+.epc-card__speed-num {
+  font-size: 48px;
+  font-weight: 800;
+  color: #000;
+}
+
+.epc-card__speed-unit {
+  font-size: 20px;
+  font-weight: 800;
+  color: #000;
+}
+
+.epc-card__speed--white .epc-card__speed-num,
+.epc-card__speed--white .epc-card__speed-unit { color: #fff; }
+
+.epc-card__old-price {
+  font-size: 18px;
+  font-weight: 400;
+  color: #000;
+  text-decoration: line-through;
+  text-transform: capitalize;
+}
+
+.epc-card__old-price--white { color: #fff; }
+
+.epc-card__price {
+  display: flex;
+  align-items: baseline;
+  gap: 2px;
+  line-height: 1;
+}
+
+.epc-card__currency {
+  font-size: 20px;
+  font-weight: 400;
+  color: #000;
+}
+
+.epc-card__value {
+  font-size: 42px;
+  font-weight: 400;
+  color: #000;
+}
+
+.epc-card__period {
+  font-size: 20px;
+  font-weight: 400;
+  color: #000;
+}
+
+.epc-card__price--white .epc-card__currency,
+.epc-card__price--white .epc-card__value,
+.epc-card__price--white .epc-card__period { color: #fff; }
+
+.epc-card__divider {
+  width: 100%;
+}
+
+.epc-card__divider img {
+  width: 100%;
+  height: 3px;
+  display: block;
+}
+
+.epc-card__feature {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 15px;
+  color: #000;
+}
+
+.epc-card__feature img {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+.epc-card__actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.epc-card__btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  padding: 14px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  overflow: hidden;
+  box-shadow: 0 4px 5px rgba(0,0,0,0.25);
+}
+
+.epc-card__btn-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.epc-card__btn-icon {
+  position: relative;
+  z-index: 1;
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+}
+
+.epc-card__btn span {
+  position: relative;
+  z-index: 1;
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+}
+
+.epc-card__all-benefits {
+  font-size: 12px;
+  color: #696969;
+  text-align: center;
+}
+
+/* Card popular */
+.epc-card--popular {
+  background: transparent;
+  border: none;
+  box-shadow: 0 0 3.9px rgba(49,79,24,0.16);
+  padding: 0;
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.epc-card__popular-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.epc-card__popular-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.epc-card__popular-badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: white;
+  border-radius: 0 20px 0 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #31803e;
+  z-index: 2;
+}
+
+.epc-card__top {
+  position: relative;
+  z-index: 1;
+  padding: 20px 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.epc-card__bottom {
+  position: relative;
+  z-index: 1;
+  background: white;
+  border-radius: 14px;
+  margin: 10px;
+  padding: 18px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .epc-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .epc-card {
+    width: 100%;
+    max-width: 380px;
+  }
+}

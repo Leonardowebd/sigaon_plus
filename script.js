@@ -84,6 +84,7 @@ function toggleFaq(btn) {
 // ── Init ──
 document.addEventListener('DOMContentLoaded', function () {
   helpSlide(0);
+  plansSlide(0);
   if (window.innerWidth <= 768) {
     const next = document.querySelector('.plans__nav--next');
     if (next) next.style.opacity = '1';

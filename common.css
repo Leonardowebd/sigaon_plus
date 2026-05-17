@@ -40,11 +40,9 @@
   cursor: pointer;
   z-index: 2;
   padding: 4px;
-}
-
-.addr-dialog__close img {
-  width: 28px;
-  height: 28px;
+  font-size: 22px;
+  line-height: 1;
+  color: #fff;
 }
 
 .addr-dialog__header {

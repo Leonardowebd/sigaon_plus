@@ -1,4 +1,4 @@
-(function () {
+﻿(function () {
   var DEFAULTS = {
     links: {
       whatsapp_geral: 'https://wa.me/557336136407',
@@ -11,31 +11,32 @@
   };
 
   var VOCE_ASSETS = {
-    checkIcon:     'https://www.figma.com/api/mcp/asset/6c9d3956-30c6-4586-8b0c-725597b0a264',
-    dividerLight:  'https://www.figma.com/api/mcp/asset/46559e35-d4d5-442a-80d4-58d506aabb34',
-    dividerPopular:'https://www.figma.com/api/mcp/asset/3ec0ef41-3d82-4afa-a35c-bfd0fee9acde',
-    btnBg:         'https://www.figma.com/api/mcp/asset/395ad4c4-1694-44de-9e72-6dd14b16fd82',
-    popularBg:     'https://www.figma.com/api/mcp/asset/6440a0d0-8c95-4003-9455-4ed8e49a1cc0',
+    checkIcon:     'assets/images/plan-check.svg',
+    dividerLight:  'assets/images/plan-divider-light.svg',
+    dividerPopular:'assets/images/plan-divider-popular.svg',
+    btnBg:         'assets/images/assinar-btn-bg.png',
+    btnIcon:       'assets/images/icon-svg16.svg',
+    popularBg:     'assets/images/plan-popular-bg.png',
     apps: {
-      bebanca:     'https://www.figma.com/api/mcp/asset/419e6e4c-fcc0-434f-9042-f31f9b833813',
-      BiblioTechie:'https://www.figma.com/api/mcp/asset/0513ba2d-32b8-4ffa-8869-ac58a40a1692',
-      Yplay:       'https://www.figma.com/api/mcp/asset/d6193f66-4de5-437d-9640-999370447260',
-      Deezer:      'https://www.figma.com/api/mcp/asset/45674e75-61d3-49b1-b1b4-6e58902ce273'
+      bebanca:     'assets/images/app-logo-bebanca.png',
+      BiblioTechie:'assets/images/app-logo-bibliotechie.png',
+      Yplay:       'assets/images/app-logo-yplay.png',
+      Deezer:      'assets/images/app-logo-deezer.png'
     }
   };
 
   var EMPRESAS_ASSETS = {
-    cardBg:  'https://www.figma.com/api/mcp/asset/47412d52-816d-4372-8806-c4d0e55c64c3',
-    check:   'https://www.figma.com/api/mcp/asset/158be7a8-c6d5-499c-a1d8-6f84af0b12f2',
-    btnBg:   'https://www.figma.com/api/mcp/asset/84eebd0c-26f6-4823-9816-36fa47c51b6d'
+    cardBg:  'assets/images/card-bg.png',
+    check:   'assets/images/plan-check.svg',
+    btnBg:   'assets/images/assinar-btn-bg.png'
   };
 
   var EPRICEPLAN_ASSETS = {
-    popularBg: 'https://www.figma.com/api/mcp/asset/fdce88af-63c8-459e-8bc8-3c83110742d5',
-    checkIcon: 'https://www.figma.com/api/mcp/asset/e5c25c96-7d3a-4a9f-b33e-863ac82d5d59',
-    btnBg:     'https://www.figma.com/api/mcp/asset/aef57ce0-1005-4092-a882-1102c5d2ae8c',
-    waIcon:    'https://www.figma.com/api/mcp/asset/103adb64-cad9-4bd2-8c45-755938428df5',
-    divider:   'https://www.figma.com/api/mcp/asset/463b6933-f5f3-4226-9951-50f95f4867df'
+    popularBg: 'assets/images/plan-popular-bg.png',
+    checkIcon: 'assets/images/plan-check.svg',
+    btnBg:     'assets/images/assinar-btn-bg.png',
+    waIcon:    'assets/images/icon-svg12.svg',
+    divider:   'assets/images/plan-divider-light.svg'
   };
 
   var DEFAULT_VOCE_PLANS = [
@@ -95,7 +96,7 @@
           '<span>' + f + '</span></div>';
       }).join('');
       var btn = '<a href="#" onclick="openWA(event,\'' + plan.nome.replace(/'/g, "\\'") + '\')" class="plan-card__btn">' +
-        '<img src="' + VOCE_ASSETS.btnBg + '" alt="" />' +
+        '<img src="' + VOCE_ASSETS.btnIcon + '" alt="" class="plan-card__btn-icon" />' +
         '<span>Contratar Agora!</span></a>';
       var logos = '<div class="plan-card__logos">' + appImgs + '</div>';
       var dividerHtml = '<div class="plan-card__divider"><img src="' + divider + '" alt="" /></div>';

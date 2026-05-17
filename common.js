@@ -1,4 +1,4 @@
-// ── City Selection ──
+﻿// ── City Selection ──
 document.addEventListener('DOMContentLoaded', function () {
   var cidade = localStorage.getItem('sigaon_cidade') || 'Vitória da Conquista';
   var pin = document.querySelector('.topbar__location span');
@@ -103,9 +103,7 @@ function injectDialogs() {
     el.innerHTML =
       '<div class="addr-dialog__overlay" onclick="closeAddressDialog()"></div>' +
       '<div class="addr-dialog__box">' +
-        '<button class="addr-dialog__close" onclick="closeAddressDialog()">' +
-          '<img src="https://www.figma.com/api/mcp/asset/31f2bb89-abd5-446f-97f8-fb20f67963da" alt="Fechar" />' +
-        '</button>' +
+        '<button class="addr-dialog__close" onclick="closeAddressDialog()">✕</button>' +
         '<div class="addr-dialog__header">' +
           '<h2>Venha conhecer nossos escritórios</h2>' +
         '</div>' +
